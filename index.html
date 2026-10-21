@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#b91635"><title>General Assembly Attendance</title><link rel="stylesheet" href="style.css"><script src="config.js" defer></script><script src="script.js" defer></script><script src="https://accounts.google.com/gsi/client" async defer></script></head><body><div id="ga-preview">
+
+<header><div class="brand"><img class="logo" src="logo.png" alt="School logo"></div><span class="connected">Not connected</span><button id="ga-connect" class="secondary cursor-interaction" type="button">Connect Google</button><button id="ga-logout" class="secondary cursor-interaction" type="button" hidden>Disconnect</button></header>
+<section class="hero"><div><div class="welcome-label"><span></span>Welcome to<span></span></div><h1>General <em>Assembly</em><span class="title-star" aria-hidden="true">✦</span></h1></div></section>
+<section class="station"><div class="station-head"><div class="count"><small>Total present</small><strong id="ga-count">—</strong></div><div class="clock"><small id="ga-date"></small><strong id="ga-time"></strong></div></div>
+<div id="ga-notice" role="status" aria-live="polite">Connect Google to load student records.</div><form id="ga-check"><label for="ga-id">Student ID</label><input id="ga-id" inputmode="numeric" placeholder="2021-07-00227" autocomplete="off" maxlength="13" required aria-describedby="ga-hint"><small id="ga-hint">Enter your student ID. Dashes are added automatically.</small><button class="primary cursor-interaction" type="submit">Record attendance →</button></form>
+<div id="ga-result" class="result" aria-live="polite" hidden></div>
+<form id="ga-manual" hidden><h3>Manual attendance</h3><div class="fields"><div><label for="ga-mid">Student ID</label><input id="ga-mid" maxlength="13" inputmode="numeric" required></div><div><label for="ga-name">Student name</label><input id="ga-name" required autocomplete="name"></div><div><label for="ga-course">Course</label><select id="ga-course" required><option value="">Select course</option></select></div><div><label for="ga-year">Year level</label><select id="ga-year" required><option value="4">4th Year</option></select></div></div><button class="primary cursor-interaction" type="submit">Submit manual attendance</button><button class="secondary cursor-interaction" id="ga-cancel" type="button">Cancel</button></form>
+</section><div class="bottom-message"><p>Fourth-year students, this moment is yours. Let’s come together, celebrate how far you’ve come, and take the next step toward graduation.</p></div><footer>General Assembly · Celebrating today. Preparing for tomorrow.</footer>
+
+</div>
+</body></html>
